@@ -8,7 +8,14 @@
 import scrapy
 
 
-class AnnoncesItem(scrapy.Item):
+class AnnoncesProductItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    category = scrapy.Field()
+    url = scrapy.Field()
+    product_type = scrapy.Field()
+    title = scrapy.Field()
+    date = scrapy.Field()
+    description = scrapy.Field()
+    price = scrapy.Field()
+    thumbnails = scrapy.Field()
